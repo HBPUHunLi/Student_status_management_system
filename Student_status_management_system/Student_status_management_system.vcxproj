@@ -78,8 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\MySQL\MySQL Server 8.0\include;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\MySQL\MySQL Server 8.0\lib;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>

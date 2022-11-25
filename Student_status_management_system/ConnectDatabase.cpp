@@ -9,7 +9,7 @@ MYSQL ConnectDatabase()
 	mysql_init(&mysql);  //连接mysql，数据库  
 	const char host[] = "127.0.0.1";
 	const char user[] = "root";
-	const char psw[] = "123456";
+	const char psw[] = "123456789";
 	const char database[] = "student_stuats_management_system";
 	const int port = 3306;
 	//返回false则连接失败，返回true则连接成功  
