@@ -144,6 +144,8 @@
   <ItemGroup>
     <ClCompile Include="ConnectDatabase.cpp" />
     <ClCompile Include="FreeConnect.cpp" />
+    <ClCompile Include="student_DeleteData.cpp" />
+    <ClCompile Include="student_ModifyData.cpp" />
     <ClCompile Include="student_QueryDatabase.cpp" />
     <ClCompile Include="student_InsertData.cpp" />
     <ClCompile Include="main.cpp" />

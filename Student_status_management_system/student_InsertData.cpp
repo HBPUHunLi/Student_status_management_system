@@ -2,7 +2,7 @@
 
 
 //向student表插入数据  
-bool InsertData(MYSQL mysql)
+bool student_InsertData(MYSQL mysql)
 {
 	char query[150];
 	char Sno[20];

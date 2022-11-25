@@ -36,6 +36,12 @@
     <ClCompile Include="student_QueryDatabase.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
+    <ClCompile Include="student_ModifyData.cpp">
+      <Filter>源文件\student</Filter>
+    </ClCompile>
+    <ClCompile Include="student_DeleteData.cpp">
+      <Filter>源文件\student</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="studentM.h">
