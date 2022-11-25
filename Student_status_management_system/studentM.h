@@ -26,6 +26,6 @@ bool QueryDatabase2(MYSQL mysql);  	//²éÑ¯2
 bool InsertData(MYSQL mysql);			//Ôö
 bool ModifyData(MYSQL mysql);			//¸Ä
 bool DeleteData(MYSQL mysql);			//É¾
-
+bool QueryStudentOFSname(MYSQL mysql);
 
 #endif

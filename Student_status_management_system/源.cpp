@@ -6,12 +6,10 @@ MYSQL mysql; //mysqlÁ¬½Ó
 int main() {
 
 	mysql = ConnectDatabase();
-	int x;
-	cin >> x;
-	if (x == 0)
-		InsertData(mysql);
-	else
-		QueryStudentAll(mysql);
+	while(1)
+	{
+		
+	}
 	//FreeConnect();
 	return 0;
 }
