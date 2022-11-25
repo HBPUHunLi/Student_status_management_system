@@ -13,10 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\student">
+      <UniqueIdentifier>{29daad57-2b1f-4b05-b80f-98003e37c9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MySql">
+      <UniqueIdentifier>{d47087b6-b5cf-4af3-a790-c41da5c673d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="student_InsertData.cpp">
+      <Filter>源文件\student</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectDatabase.cpp">
+      <Filter>源文件\MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeConnect.cpp">
+      <Filter>源文件\MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryDatabase.cpp">
+      <Filter>源文件\student</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="studentM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
