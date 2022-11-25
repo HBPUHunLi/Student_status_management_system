@@ -21,7 +21,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="student_InsertData.cpp">
@@ -33,7 +33,7 @@
     <ClCompile Include="FreeConnect.cpp">
       <Filter>源文件\MySql</Filter>
     </ClCompile>
-    <ClCompile Include="QueryDatabase.cpp">
+    <ClCompile Include="student_QueryDatabase.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
   </ItemGroup>

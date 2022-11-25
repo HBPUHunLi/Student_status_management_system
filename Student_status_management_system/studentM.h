@@ -21,11 +21,14 @@ using namespace std;
 
 MYSQL ConnectDatabase();		//连接数据库 
 void FreeConnect(MYSQL mysql);			//释放资源  
-bool QueryStudentAll(MYSQL mysql);  	//查询1  
-bool QueryDatabase2(MYSQL mysql);  	//查询2  
 bool InsertData(MYSQL mysql);			//增
 bool ModifyData(MYSQL mysql);			//改
 bool DeleteData(MYSQL mysql);			//删
-bool QueryStudentOFSname(MYSQL mysql);
+
+
+bool QueryStudentAll(MYSQL mysql);  	//查询student表全部内容
+bool QueryStudentOFSname(MYSQL mysql);	//通过姓名查询student表
+bool QueryStudentOFSno(MYSQL mysql);	//通过学号查询student表
+
 
 #endif

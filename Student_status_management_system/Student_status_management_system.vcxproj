@@ -144,9 +144,9 @@
   <ItemGroup>
     <ClCompile Include="ConnectDatabase.cpp" />
     <ClCompile Include="FreeConnect.cpp" />
-    <ClCompile Include="QueryDatabase.cpp" />
+    <ClCompile Include="student_QueryDatabase.cpp" />
     <ClCompile Include="student_InsertData.cpp" />
-    <ClCompile Include="源.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="studentM.h" />
