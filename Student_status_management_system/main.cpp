@@ -28,6 +28,7 @@ int main() {
 
 				break;
 			}
+		case '9':dept_CreateTable(mysql); break;
 		default: 
 			{
 				FreeConnect(mysql);

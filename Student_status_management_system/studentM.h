@@ -39,6 +39,23 @@ bool QueryStudentOFSno(MYSQL mysql,char Sno[]);	//通过特定学号查询student表
 
 bool student_DeleteData(MYSQL mysql);			//通过学号删除student表的值 
 
+//--------------------------------Dept
+bool dept_CreateTable(MYSQL mysql);			//创建Dept表
+bool dept_DropTable(MYSQL mysql);			//删除Dept表
+
+bool dept_InsertData(MYSQL mysql);			//向Dept表添加值
+
+//--------------------------------Major
+bool major_CreateTable(MYSQL mysql);		//创建Major表
+bool major_DropTable(MYSQL mysql);			//删除Major表
+
+bool major_InsertData(MYSQL mysql);			//向Major表添加值
+
+//--------------------------------Report
+bool report_CreateTable(MYSQL mysql);		//创建Report表
+bool report_DropTable(MYSQL mysql);			//删除Report表
+
+bool report_InsertData(MYSQL mysql);			//向Report表添加值
 //--------------------------------age
 char* Sage(int age);							//返回大于age岁的出生日期
 #endif

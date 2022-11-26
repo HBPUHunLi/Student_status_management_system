@@ -22,6 +22,15 @@
     <Filter Include="源文件\算法">
       <UniqueIdentifier>{14a270a0-d5fb-4188-b55c-1eafa7bea403}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Dept">
+      <UniqueIdentifier>{a743f73f-28ce-4e3b-b123-857bfeab0767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Major">
+      <UniqueIdentifier>{fcc63e9f-71bf-485a-a5ea-7a57815b5032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Report">
+      <UniqueIdentifier>{e8644fa0-b0eb-48bd-8e5c-a725289ceb48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -53,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="Sage.cpp">
       <Filter>源文件\算法</Filter>
+    </ClCompile>
+    <ClCompile Include="dept_CreateTable.cpp">
+      <Filter>源文件\Dept</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

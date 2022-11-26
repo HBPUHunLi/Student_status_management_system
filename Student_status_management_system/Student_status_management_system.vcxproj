@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dept_CreateTable.cpp" />
     <ClCompile Include="Sage.cpp" />
     <ClCompile Include="ConnectDatabase.cpp" />
     <ClCompile Include="FreeConnect.cpp" />
