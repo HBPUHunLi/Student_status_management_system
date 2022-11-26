@@ -77,7 +77,7 @@ bool student_ModifyData(MYSQL mysql)
 	}
 	if (mysql_query(&mysql, query))        //Ö´ÐÐSQLÓï¾ä  
 	{
-		printf("Query failed (%s)\n\n", mysql_error(&mysql));
+		printf("Modify Data failed (%s)\n\n", mysql_error(&mysql));
 			return false;
 	}
 	else

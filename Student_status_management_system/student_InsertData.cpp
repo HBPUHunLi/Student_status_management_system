@@ -30,12 +30,12 @@ bool student_InsertData(MYSQL mysql)
 
 	if (mysql_query(&mysql, query))        //Ö´ÐÐSQLÓï¾ä  
 	{
-		printf("Query failed (%s)\n\n", mysql_error(&mysql));
+		printf("Insert Data failed (%s)\n\n", mysql_error(&mysql));
 		return false;
 	}
 	else
 	{
-		printf("Insert success\n\n");
+		printf("Insert Data success\n\n");
 		return true;
 	}
 }

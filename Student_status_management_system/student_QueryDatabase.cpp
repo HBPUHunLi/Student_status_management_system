@@ -18,7 +18,7 @@ bool QueryStudentAll(MYSQL mysql)
 	}
 	else
 	{
-		printf("query success\n\n");
+		printf("Query success\n\n");
 	}
 
 	//获取结果集
@@ -72,7 +72,7 @@ bool QueryStudentOFSname(MYSQL mysql)
 	}
 	else
 	{
-		printf("query success\n\n");
+		printf("Query success\n\n");
 	}
 
 	//获取结果集
@@ -125,7 +125,7 @@ bool QueryStudentOFSno(MYSQL mysql)
 	}
 	else
 	{
-		printf("query success\n\n");
+		printf("Query success\n\n");
 	}
 
 	//获取结果集
@@ -175,7 +175,7 @@ bool QueryStudentOFSno(MYSQL mysql, char Sno[])
 	}
 	else
 	{
-		printf("query success\n\n");
+		printf("Query success\n\n");
 	}
 
 	//获取结果集
@@ -184,9 +184,6 @@ bool QueryStudentOFSno(MYSQL mysql, char Sno[])
 		printf("Couldn't get result from %s\n\n", mysql_error(&mysql));
 		return false;
 	}
-
-	//打印数据行数
-	printf("number of dataline returned: %d\n\n", (int)mysql_affected_rows(&mysql));
 
 	//获取字段的信息
 	char* str_field[32];			//定义一个字符串数组存储字段信息

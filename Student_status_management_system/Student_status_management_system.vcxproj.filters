@@ -19,6 +19,9 @@
     <Filter Include="源文件\MySql">
       <UniqueIdentifier>{d47087b6-b5cf-4af3-a790-c41da5c673d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\算法">
+      <UniqueIdentifier>{14a270a0-d5fb-4188-b55c-1eafa7bea403}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,6 +44,15 @@
     </ClCompile>
     <ClCompile Include="student_DeleteData.cpp">
       <Filter>源文件\student</Filter>
+    </ClCompile>
+    <ClCompile Include="student_CreateTable.cpp">
+      <Filter>源文件\student</Filter>
+    </ClCompile>
+    <ClCompile Include="student_DropTable.cpp">
+      <Filter>源文件\student</Filter>
+    </ClCompile>
+    <ClCompile Include="Sage.cpp">
+      <Filter>源文件\算法</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

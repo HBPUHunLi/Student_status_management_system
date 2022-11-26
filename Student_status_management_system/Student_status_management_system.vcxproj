@@ -142,9 +142,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sage.cpp" />
     <ClCompile Include="ConnectDatabase.cpp" />
     <ClCompile Include="FreeConnect.cpp" />
+    <ClCompile Include="student_CreateTable.cpp" />
     <ClCompile Include="student_DeleteData.cpp" />
+    <ClCompile Include="student_DropTable.cpp" />
     <ClCompile Include="student_ModifyData.cpp" />
     <ClCompile Include="student_QueryDatabase.cpp" />
     <ClCompile Include="student_InsertData.cpp" />

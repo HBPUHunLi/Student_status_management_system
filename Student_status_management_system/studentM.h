@@ -7,8 +7,10 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <stdlib.h>
 #include <mysql.h>
 #include <string.h>
+#include <ctime>
 
 //MYSQL mysql; //mysql连接
 //MYSQL_FIELD* fd;  //字段列数组
@@ -18,16 +20,15 @@
 //char query[150]; //查询语句
 
 using namespace std;
-
-MYSQL ConnectDatabase();		//连接数据库 
-void FreeConnect(MYSQL mysql);			//释放资源  
-
-
-
-
+//--------------------------------Database
+MYSQL ConnectDatabase();						//连接数据库
+void FreeConnect(MYSQL mysql);					//释放资源
 
 
 //--------------------------------student
+bool student_CreateTable(MYSQL mysql);			//创建student表
+bool student_DropTable(MYSQL mysql);			//删除student表
+
 bool student_InsertData(MYSQL mysql);			//向student表添加值
 bool student_ModifyData(MYSQL mysql);			//通过学号修改student表的值
 
@@ -36,7 +37,8 @@ bool QueryStudentOFSname(MYSQL mysql);			//通过姓名查询student表
 bool QueryStudentOFSno(MYSQL mysql);			//通过学号查询student表
 bool QueryStudentOFSno(MYSQL mysql,char Sno[]);	//通过特定学号查询student表
 
-bool student_DeleteData(MYSQL mysql);			//删
+bool student_DeleteData(MYSQL mysql);			//通过学号删除student表的值 
 
-
+//--------------------------------age
+char* Sage(int age);							//返回大于age岁的出生日期
 #endif
