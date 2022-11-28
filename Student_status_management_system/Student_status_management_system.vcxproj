@@ -78,7 +78,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files\MySQL\MySQL Server 8.0\include;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\lenovo\source\repos\Student_status_management_system\Student_status_management_system\include;C:\Program Files\MySQL\MySQL Server 8.0\include;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\MySQL\MySQL Server 8.0\lib;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -142,30 +142,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dept_CreateTable.cpp" />
-    <ClCompile Include="dept_DropTable.cpp" />
-    <ClCompile Include="dept测试数据.cpp" />
-    <ClCompile Include="major_CreateTable.cpp" />
-    <ClCompile Include="major测试数据.cpp" />
-    <ClCompile Include="menu.cpp" />
-    <ClCompile Include="report_CreateTable.cpp" />
-    <ClCompile Include="report_DropTable.cpp" />
-    <ClCompile Include="report测试数据.cpp" />
-    <ClCompile Include="Sage.cpp" />
-    <ClCompile Include="ConnectDatabase.cpp" />
-    <ClCompile Include="FreeConnect.cpp" />
-    <ClCompile Include="student_CreateTable.cpp" />
-    <ClCompile Include="student_DeleteData.cpp" />
-    <ClCompile Include="student_DropTable.cpp" />
-    <ClCompile Include="student_ModifyData.cpp" />
-    <ClCompile Include="student_QueryDatabase.cpp" />
-    <ClCompile Include="student_InsertData.cpp" />
+    <ClCompile Include="dept\dept_CreateTable.cpp" />
+    <ClCompile Include="dept\dept_DropTable.cpp" />
+    <ClCompile Include="测试数据\dept测试数据.cpp" />
+    <ClCompile Include="major\major_CreateTable.cpp" />
+    <ClCompile Include="测试数据\major测试数据.cpp" />
+    <ClCompile Include="menu\menu.cpp" />
+    <ClCompile Include="report\report_CreateTable.cpp" />
+    <ClCompile Include="report\report_DropTable.cpp" />
+    <ClCompile Include="测试数据\report测试数据.cpp" />
+    <ClCompile Include="算法\Sage.cpp" />
+    <ClCompile Include="mysql\ConnectDatabase.cpp" />
+    <ClCompile Include="mysql\FreeConnect.cpp" />
+    <ClCompile Include="student\student_CreateTable.cpp" />
+    <ClCompile Include="student\student_DeleteData.cpp" />
+    <ClCompile Include="student\student_DropTable.cpp" />
+    <ClCompile Include="student\student_ModifyData.cpp" />
+    <ClCompile Include="student\student_QueryDatabase.cpp" />
+    <ClCompile Include="student\student_InsertData.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="major_DropTable.cpp" />
-    <ClCompile Include="student测试数据.cpp" />
+    <ClCompile Include="major\major_DropTable.cpp" />
+    <ClCompile Include="测试数据\student测试数据.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="studentM.h" />
+    <ClInclude Include="include\studentM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

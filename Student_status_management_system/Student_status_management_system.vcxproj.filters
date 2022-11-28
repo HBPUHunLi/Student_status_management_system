@@ -39,69 +39,69 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="student_InsertData.cpp">
+    <ClCompile Include="student\student_InsertData.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
-    <ClCompile Include="ConnectDatabase.cpp">
+    <ClCompile Include="mysql\ConnectDatabase.cpp">
       <Filter>源文件\MySql</Filter>
     </ClCompile>
-    <ClCompile Include="FreeConnect.cpp">
+    <ClCompile Include="mysql\FreeConnect.cpp">
       <Filter>源文件\MySql</Filter>
     </ClCompile>
-    <ClCompile Include="student_QueryDatabase.cpp">
+    <ClCompile Include="student\student_QueryDatabase.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
-    <ClCompile Include="student_ModifyData.cpp">
+    <ClCompile Include="student\student_ModifyData.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
-    <ClCompile Include="student_DeleteData.cpp">
+    <ClCompile Include="student\student_DeleteData.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
-    <ClCompile Include="student_CreateTable.cpp">
+    <ClCompile Include="student\student_CreateTable.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
-    <ClCompile Include="student_DropTable.cpp">
+    <ClCompile Include="student\student_DropTable.cpp">
       <Filter>源文件\student</Filter>
     </ClCompile>
-    <ClCompile Include="Sage.cpp">
+    <ClCompile Include="算法\Sage.cpp">
       <Filter>源文件\算法</Filter>
     </ClCompile>
-    <ClCompile Include="dept_CreateTable.cpp">
+    <ClCompile Include="dept\dept_CreateTable.cpp">
       <Filter>源文件\Dept</Filter>
     </ClCompile>
-    <ClCompile Include="major_CreateTable.cpp">
+    <ClCompile Include="major\major_CreateTable.cpp">
       <Filter>源文件\Major</Filter>
     </ClCompile>
-    <ClCompile Include="report_CreateTable.cpp">
+    <ClCompile Include="report\report_CreateTable.cpp">
       <Filter>源文件\Report</Filter>
     </ClCompile>
-    <ClCompile Include="report_DropTable.cpp">
+    <ClCompile Include="report\report_DropTable.cpp">
       <Filter>源文件\Report</Filter>
     </ClCompile>
-    <ClCompile Include="major_DropTable.cpp">
+    <ClCompile Include="major\major_DropTable.cpp">
       <Filter>源文件\Major</Filter>
     </ClCompile>
-    <ClCompile Include="dept_DropTable.cpp">
+    <ClCompile Include="dept\dept_DropTable.cpp">
       <Filter>源文件\Dept</Filter>
     </ClCompile>
-    <ClCompile Include="menu.cpp">
+    <ClCompile Include="menu\menu.cpp">
       <Filter>源文件\menu</Filter>
     </ClCompile>
-    <ClCompile Include="student测试数据.cpp">
+    <ClCompile Include="测试数据\student测试数据.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
-    <ClCompile Include="dept测试数据.cpp">
+    <ClCompile Include="测试数据\dept测试数据.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
-    <ClCompile Include="major测试数据.cpp">
+    <ClCompile Include="测试数据\major测试数据.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
-    <ClCompile Include="report测试数据.cpp">
+    <ClCompile Include="测试数据\report测试数据.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="studentM.h">
+    <ClInclude Include="include\studentM.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
