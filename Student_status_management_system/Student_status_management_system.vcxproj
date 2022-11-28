@@ -143,6 +143,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dept_CreateTable.cpp" />
+    <ClCompile Include="dept_DropTable.cpp" />
+    <ClCompile Include="dept测试数据.cpp" />
+    <ClCompile Include="major_CreateTable.cpp" />
+    <ClCompile Include="major测试数据.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="report_CreateTable.cpp" />
+    <ClCompile Include="report_DropTable.cpp" />
+    <ClCompile Include="report测试数据.cpp" />
     <ClCompile Include="Sage.cpp" />
     <ClCompile Include="ConnectDatabase.cpp" />
     <ClCompile Include="FreeConnect.cpp" />
@@ -153,6 +161,8 @@
     <ClCompile Include="student_QueryDatabase.cpp" />
     <ClCompile Include="student_InsertData.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="major_DropTable.cpp" />
+    <ClCompile Include="student测试数据.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="studentM.h" />

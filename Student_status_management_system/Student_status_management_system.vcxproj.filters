@@ -31,6 +31,9 @@
     <Filter Include="源文件\Report">
       <UniqueIdentifier>{e8644fa0-b0eb-48bd-8e5c-a725289ceb48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\menu">
+      <UniqueIdentifier>{3cdff6ce-12a7-42ce-8302-1c14e5e7064b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -65,6 +68,36 @@
     </ClCompile>
     <ClCompile Include="dept_CreateTable.cpp">
       <Filter>源文件\Dept</Filter>
+    </ClCompile>
+    <ClCompile Include="major_CreateTable.cpp">
+      <Filter>源文件\Major</Filter>
+    </ClCompile>
+    <ClCompile Include="report_CreateTable.cpp">
+      <Filter>源文件\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="report_DropTable.cpp">
+      <Filter>源文件\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="major_DropTable.cpp">
+      <Filter>源文件\Major</Filter>
+    </ClCompile>
+    <ClCompile Include="dept_DropTable.cpp">
+      <Filter>源文件\Dept</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>源文件\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="student测试数据.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dept测试数据.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="major测试数据.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="report测试数据.cpp">
+      <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

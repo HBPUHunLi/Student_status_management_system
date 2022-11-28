@@ -24,6 +24,12 @@ using namespace std;
 MYSQL ConnectDatabase();						//连接数据库
 void FreeConnect(MYSQL mysql);					//释放资源
 
+//--------------------------------menu
+
+void SwitchStudent(MYSQL mysql);
+void SwitchMajor(MYSQL mysql);
+void SwitchDept(MYSQL mysql);
+void SwitchReport(MYSQL mysql);
 
 //--------------------------------student
 bool student_CreateTable(MYSQL mysql);			//创建student表
@@ -42,13 +48,11 @@ bool student_DeleteData(MYSQL mysql);			//通过学号删除student表的值
 //--------------------------------Dept
 bool dept_CreateTable(MYSQL mysql);			//创建Dept表
 bool dept_DropTable(MYSQL mysql);			//删除Dept表
-
 bool dept_InsertData(MYSQL mysql);			//向Dept表添加值
 
 //--------------------------------Major
 bool major_CreateTable(MYSQL mysql);		//创建Major表
 bool major_DropTable(MYSQL mysql);			//删除Major表
-
 bool major_InsertData(MYSQL mysql);			//向Major表添加值
 
 //--------------------------------Report

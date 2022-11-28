@@ -2,35 +2,34 @@
 
 MYSQL mysql; //mysql连接
 
+
+
+
 //-----------------------------主函数-----------------------------
 int main() {
 
 	mysql = ConnectDatabase();
 	while(1)
 	{
+		cout << endl;
 		char x;
+		
+		cout << "操作Student表信息请输入1"<<endl;
+		cout << "操作Major表信息请输入2" << endl;
+		cout << "操作Dept表信息请输入3" << endl;
+		cout << "操作Report表信息请输入4" << endl;
+		cout << "输入其他字符以退出程序" << endl;
+		cout << "请选择功能：";
 		cin >> x;
 		switch (x)
 		{
-		case '0':student_InsertData(mysql); break;
-		case '1':QueryStudentAll(mysql); break;
-		case '2':QueryStudentOFSname(mysql); break;
-		case '3':QueryStudentOFSno(mysql); break;
-		case '4':student_ModifyData(mysql); break;
-		case '5':student_DeleteData(mysql); break;
-		case '6':student_CreateTable(mysql); break;
-		case '7':student_DropTable(mysql); break;
-		case '8':
-			{
-				int a;
-				cin >> a;
-				printf("%s\n%d", Sage(a),(int)strlen(Sage(18)));
-
-				break;
-			}
-		case '9':dept_CreateTable(mysql); break;
+		case '1':SwitchStudent(mysql); break;
+		case '2':SwitchMajor(mysql); break;
+		case '3':SwitchDept(mysql); break;
+		case '4':SwitchReport(mysql); break;
 		default: 
 			{
+			cout << endl;
 				FreeConnect(mysql);
 				return 0;
 			}

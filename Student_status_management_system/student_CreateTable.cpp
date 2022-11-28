@@ -7,8 +7,7 @@ bool student_CreateTable(MYSQL mysql)
 	strcat(query, "Sno varchar(20) not null unique primary key,");
 	strcat(query, "Sname varchar(20) not null,");
 	strcat(query, "birthday varchar(12) not null,");
-	strcat(query, "Ssex varchar(2) not null,");
-	strcat(query, "Sdept varchar(20) not null);");
+	strcat(query, "Ssex varchar(2) not null);");
 	
 	if (mysql_query(&mysql, query))
 	{

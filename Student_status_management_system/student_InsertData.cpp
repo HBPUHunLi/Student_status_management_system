@@ -9,12 +9,11 @@ bool student_InsertData(MYSQL mysql)
 	char Sname[40];
 	char Birthday[12];
 	char Ssex[4];
-	char Sdept[40];
 	char queryin[150];
-	cout << "请输入学号 姓名 出生日期（xxxx.xx.xx） 性别 所属学院" << endl;
-	cin >> Sno >> Sname >> Birthday >> Ssex >> Sdept;
+	cout << "请输入学号 姓名 出生日期（xxxx.xx.xx） 性别" << endl;
+	cin >> Sno >> Sname >> Birthday >> Ssex;
 
-	strcpy(queryin, "insert into student values ('");
+	strcpy(queryin, "insert into Student values ('");
 	strcat(queryin, Sno);
 	strcat(queryin, "','");
 	strcat(queryin, Sname);
@@ -22,8 +21,6 @@ bool student_InsertData(MYSQL mysql)
 	strcat(queryin, Birthday);
 	strcat(queryin, "','");
 	strcat(queryin, Ssex);
-	strcat(queryin, "','");
-	strcat(queryin, Sdept);
 	strcat(queryin, "'); ");
 	strcpy(query, queryin);
 	cout << endl << query << endl;

@@ -7,7 +7,7 @@ MYSQL_ROW column; //一个行数据的类型安全(type-safe)的表示，表示数据行的列
 //查询数据
 bool QueryStudentAll(MYSQL mysql)
 {;
-	strcpy(query, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别,Sdept as 学院 from student;"); //输入查询语句
+	strcpy(query, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别 from Student;"); //输入查询语句
 	mysql_query(&mysql, "set names gbk"); //设置编码格式（SET NAMES GBK也行），否则cmd下中文乱码
 
 	//返回0 查询成功，返回1查询失败
@@ -33,12 +33,12 @@ bool QueryStudentAll(MYSQL mysql)
 
 	//获取字段的信息
 	char* str_field[32];			//定义一个字符串数组存储字段信息
-	for (int i = 0; i < 5; i++)		//在已知字段数量的情况下获取字段名
+	for (int i = 0; i < 4; i++)		//在已知字段数量的情况下获取字段名
 	{
 		str_field[i] = mysql_fetch_field(res)->name;	//返回一个所有字段结构的数组。
 	}
 
-	for (int i = 0; i < 5; i++)		//打印字段
+	for (int i = 0; i < 4; i++)		//打印字段
 		printf("%10s	", str_field[i]);
 
 	printf("\n");
@@ -46,7 +46,7 @@ bool QueryStudentAll(MYSQL mysql)
 	//打印获取的数据
 	while (column = mysql_fetch_row(res))   //在已知字段数量情况下，获取并打印下一行
 	{
-		printf("%10s	%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3],column[4]);  //column是列数组
+		printf("%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3]);  //column是列数组
 	}
 
 	return true;
@@ -59,7 +59,7 @@ bool QueryStudentOFSname(MYSQL mysql)
 	char queryin[150];
 	char Sname[40];
 	cin>>Sname;
-	strcpy(queryin, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别,Sdept as 学院 from student where Sname='"); //输入查询语句
+	strcpy(queryin, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别 from Student where Sname='"); //输入查询语句
 	strcat(queryin, Sname);
 	strcat(queryin, "';");
 	mysql_query(&mysql, "set names gbk"); //设置编码格式（SET NAMES GBK也行），否则cmd下中文乱码
@@ -87,12 +87,12 @@ bool QueryStudentOFSname(MYSQL mysql)
 
 	//获取字段的信息
 	char* str_field[32];			//定义一个字符串数组存储字段信息
-	for (int i = 0; i < 5; i++)		//在已知字段数量的情况下获取字段名
+	for (int i = 0; i < 4; i++)		//在已知字段数量的情况下获取字段名
 	{
 		str_field[i] = mysql_fetch_field(res)->name;	//返回一个所有字段结构的数组。
 	}
 
-	for (int i = 0; i < 5; i++)		//打印字段
+	for (int i = 0; i < 4; i++)		//打印字段
 		printf("%10s	", str_field[i]);
 
 	printf("\n");
@@ -100,7 +100,7 @@ bool QueryStudentOFSname(MYSQL mysql)
 	//打印获取的数据
 	while (column = mysql_fetch_row(res))   //在已知字段数量情况下，获取并打印下一行
 	{
-		printf("%10s	%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3], column[4]);  //column是列数组
+		printf("%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3]);  //column是列数组
 	}
 
 	return true;
@@ -112,7 +112,7 @@ bool QueryStudentOFSno(MYSQL mysql)
 	char queryin[150];
 	char Sno[20];
 	cin >> Sno;
-	strcpy(queryin, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别,Sdept as 学院 from student where Sno='"); //输入查询语句
+	strcpy(queryin, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别 from Student where Sno='"); //输入查询语句
 	strcat(queryin, Sno);
 	strcat(queryin, "';");
 	mysql_query(&mysql, "set names gbk"); //设置编码格式（SET NAMES GBK也行），否则cmd下中文乱码
@@ -140,12 +140,12 @@ bool QueryStudentOFSno(MYSQL mysql)
 
 	//获取字段的信息
 	char* str_field[32];			//定义一个字符串数组存储字段信息
-	for (int i = 0; i < 5; i++)		//在已知字段数量的情况下获取字段名
+	for (int i = 0; i < 4; i++)		//在已知字段数量的情况下获取字段名
 	{
 		str_field[i] = mysql_fetch_field(res)->name;	//返回一个所有字段结构的数组。
 	}
 
-	for (int i = 0; i < 5; i++)		//打印字段
+	for (int i = 0; i < 4; i++)		//打印字段
 		printf("%10s	", str_field[i]);
 
 	printf("\n");
@@ -153,7 +153,7 @@ bool QueryStudentOFSno(MYSQL mysql)
 	//打印获取的数据
 	while (column = mysql_fetch_row(res))   //在已知字段数量情况下，获取并打印下一行
 	{
-		printf("%10s	%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3], column[4]);  //column是列数组
+		printf("%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3]);  //column是列数组
 	}
 
 	return true;
@@ -162,7 +162,7 @@ bool QueryStudentOFSno(MYSQL mysql)
 bool QueryStudentOFSno(MYSQL mysql, char Sno[])
 {
 	char queryin[150];
-	strcpy(queryin, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别,Sdept as 学院 from student where Sno='"); //输入查询语句
+	strcpy(queryin, "select Sno as 学号,Sname as 姓名,Birthday as 生日,Ssex as 性别 from Student where Sno='"); //输入查询语句
 	strcat(queryin, Sno);
 	strcat(queryin, "';");
 	mysql_query(&mysql, "set names gbk"); //设置编码格式（SET NAMES GBK也行），否则cmd下中文乱码
@@ -187,12 +187,12 @@ bool QueryStudentOFSno(MYSQL mysql, char Sno[])
 
 	//获取字段的信息
 	char* str_field[32];			//定义一个字符串数组存储字段信息
-	for (int i = 0; i < 5; i++)		//在已知字段数量的情况下获取字段名
+	for (int i = 0; i < 4; i++)		//在已知字段数量的情况下获取字段名
 	{
 		str_field[i] = mysql_fetch_field(res)->name;	//返回一个所有字段结构的数组。
 	}
 
-	for (int i = 0; i < 5; i++)		//打印字段
+	for (int i = 0; i < 4; i++)		//打印字段
 		printf("%10s	", str_field[i]);
 
 	printf("\n");
@@ -200,7 +200,7 @@ bool QueryStudentOFSno(MYSQL mysql, char Sno[])
 	//打印获取的数据
 	while (column = mysql_fetch_row(res))   //在已知字段数量情况下，获取并打印下一行
 	{
-		printf("%10s	%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3], column[4]);  //column是列数组
+		printf("%10s	%10s	%10s	%10s\n", column[0], column[1], column[2], column[3]);  //column是列数组
 	}
 
 	return true;

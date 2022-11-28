@@ -15,13 +15,11 @@ bool student_ModifyData(MYSQL mysql)
 	char Sname[40];
 	char Birthday[12];
 	char Ssex[4];
-	char Sdept[40];
 	int x;
 	cout << "请输入序号来选择要修改的信息" << endl;
 	cout << "1.姓名" << endl;
 	cout << "2.生日" << endl;
 	cout << "3.性别" << endl;
-	cout << "4.学院" << endl;
 	cout << "取消修改请输入其他任意键" << endl;
 	cin >> x;
 	switch (x)
@@ -30,7 +28,7 @@ bool student_ModifyData(MYSQL mysql)
 		strcpy(Sno, input());
 		cout << "请输入修改后的姓名" << endl;
 		cin >> Sname;
-		strcpy(query, "update student set Sname='");
+		strcpy(query, "update Student set Sname='");
 		strcat(query,Sname);
 		strcat(query, "' where Sno = '");
 		strcat(query, Sno);
@@ -41,7 +39,7 @@ bool student_ModifyData(MYSQL mysql)
 		strcpy(Sno, input());
 		cout << "请输入修改后的生日(xxxx.xx.xx)" << endl;
 		cin >> Birthday;
-		strcpy(query, "update student set Birthday='");
+		strcpy(query, "update Student set Birthday='");
 		strcat(query, Birthday);
 		strcat(query, "' where Sno = '");
 		strcat(query, Sno);
@@ -52,19 +50,8 @@ bool student_ModifyData(MYSQL mysql)
 		strcpy(Sno, input());
 		cout << "请输入修改后的性别" << endl;
 		cin >> Ssex;
-		strcpy(query, "update student set Ssex='");
+		strcpy(query, "update Student set Ssex='");
 		strcat(query, Ssex);
-		strcat(query, "' where Sno = '");
-		strcat(query, Sno);
-		strcat(query, "';");
-		break;
-	}
-	case 4: {
-		strcpy(Sno, input());
-		cout << "请输入修改后的学院" << endl;
-		cin >> Sdept;
-		strcpy(query, "update student set Sdept='");
-		strcat(query, Sdept);
 		strcat(query, "' where Sno = '");
 		strcat(query, Sno);
 		strcat(query, "';");
