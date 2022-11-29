@@ -78,7 +78,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\lenovo\source\repos\Student_status_management_system\Student_status_management_system\include;C:\Program Files\MySQL\MySQL Server 8.0\include;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\wan安\source\repos\Student_status_management_system\Student_status_management_system\include;C:\Users\lenovo\source\repos\Student_status_management_system\Student_status_management_system\include;C:\Program Files\MySQL\MySQL Server 8.0\include;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\MySQL\MySQL Server 8.0\lib;D:\MySql\mysql-8.0.31-winx64\mysql-8.0.31-winx64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dept_InsertData.cpp" />
     <ClCompile Include="mysql\CreateSystem.cpp" />
     <ClCompile Include="dept\dept_CreateTable.cpp" />
     <ClCompile Include="dept\dept_DropTable.cpp" />

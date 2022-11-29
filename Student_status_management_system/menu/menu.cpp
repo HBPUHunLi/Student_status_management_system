@@ -96,7 +96,7 @@ void SwitchDept(MYSQL mysql)
 		{
 		case '1':dept_CreateTable(mysql); break;
 		case '2':dept_DropTable(mysql); break;
-		case '3':break;
+		case '3':dept_InsertData(mysql); break;
 		case '4':break;
 		case '5':break;
 		case '6':break;
