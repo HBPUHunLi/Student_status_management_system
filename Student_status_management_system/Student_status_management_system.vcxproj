@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CreateSystem.cpp" />
     <ClCompile Include="dept\dept_CreateTable.cpp" />
     <ClCompile Include="dept\dept_DropTable.cpp" />
     <ClCompile Include="测试数据\dept测试数据.cpp" />

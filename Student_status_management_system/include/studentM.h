@@ -23,7 +23,7 @@ using namespace std;
 //--------------------------------Database
 MYSQL ConnectDatabase();						//连接数据库
 void FreeConnect(MYSQL mysql);					//释放资源
-
+bool CreatSystem(MYSQL mysql);					//创建数据库系统
 //--------------------------------menu
 
 void SwitchStudent(MYSQL mysql);
@@ -42,6 +42,7 @@ bool QueryStudentAll(MYSQL mysql);  			//查询student表全部内容
 bool QueryStudentOFSname(MYSQL mysql);			//通过姓名查询student表
 bool QueryStudentOFSno(MYSQL mysql);			//通过学号查询student表
 bool QueryStudentOFSno(MYSQL mysql,char Sno[]);	//通过特定学号查询student表
+bool QueryStudentOFAge(MYSQL mysql, int age);
 
 bool student_DeleteData(MYSQL mysql);			//通过学号删除student表的值 
 

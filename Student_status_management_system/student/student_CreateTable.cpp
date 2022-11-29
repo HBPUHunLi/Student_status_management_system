@@ -2,11 +2,11 @@
 
 bool student_CreateTable(MYSQL mysql)
 {
-	char query[100];
+	char query[500];
 	strcpy(query, "create table Student(");
 	strcat(query, "Sno varchar(20) not null unique primary key,");
 	strcat(query, "Sname varchar(20) not null,");
-	strcat(query, "birthday varchar(12) not null,");
+	strcat(query, "birthday date not null,");
 	strcat(query, "Ssex varchar(2) not null);");
 	
 	if (mysql_query(&mysql, query))

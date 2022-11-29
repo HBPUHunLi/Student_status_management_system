@@ -2,7 +2,7 @@
 
 bool report_DropTable(MYSQL mysql)
 {
-	char Query[200];
+	char Query[500];
 	strcpy(Query, "drop table Report;");
 	if (mysql_query(&mysql, Query))
 	{

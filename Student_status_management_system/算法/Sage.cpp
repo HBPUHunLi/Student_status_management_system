@@ -12,9 +12,9 @@ char* Sage(int age)
 	_itoa(tm_t->tm_mon + 1, month, 10);
 	_itoa(tm_t->tm_mday, day, 10);
 	strcpy(Birthday, year);
-	strcat(Birthday, ".");
+	strcat(Birthday, "-");
 	strcat(Birthday, month);
-	strcat(Birthday, ".");
+	strcat(Birthday, "-");
 	strcat(Birthday, day);
 	return Birthday;
 }

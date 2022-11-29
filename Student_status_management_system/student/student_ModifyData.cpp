@@ -10,7 +10,7 @@ char* input()
 
 bool student_ModifyData(MYSQL mysql)
 {
-	char query[150];
+	char query[500];
 	char Sno[20];
 	char Sname[40];
 	char Birthday[12];
@@ -37,7 +37,7 @@ bool student_ModifyData(MYSQL mysql)
 	}
 	case 2: {
 		strcpy(Sno, input());
-		cout << "请输入修改后的生日(xxxx.xx.xx)" << endl;
+		cout << "请输入修改后的生日(xxxx-xx-xx)" << endl;
 		cin >> Birthday;
 		strcpy(query, "update Student set Birthday='");
 		strcat(query, Birthday);

@@ -2,7 +2,7 @@
 
 bool major_CreateTable(MYSQL mysql)
 {
-	char query[100];
+	char query[500];
 	strcpy(query, "create table Major(");
 	strcat(query, "Mno varchar(20) not null unique primary key,");
 	strcat(query, "Mname varchar(20) not null,");

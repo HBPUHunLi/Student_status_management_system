@@ -13,6 +13,7 @@ void SwitchStudent(MYSQL mysql)
 	cout << "查询所有学生信息请输入6" << endl;
 	cout << "根据学号查询学生信息请输入7" << endl;
 	cout << "根据姓名查询学生信息请输入8" << endl;
+	cout << "查询大于某一年龄的学生信息请输入9" << endl;
 	cout << "请按其他键退出Student表" << endl;
 	while (1)
 	{
@@ -29,6 +30,11 @@ void SwitchStudent(MYSQL mysql)
 		case '6':QueryStudentAll(mysql); break;
 		case '7':QueryStudentOFSno(mysql); break;
 		case '8':QueryStudentOFSname(mysql); break;
+		case '9': {
+			int age;
+			cin >> age;
+			QueryStudentOFAge(mysql, age);
+		}
 		default:return;
 		}
 	}

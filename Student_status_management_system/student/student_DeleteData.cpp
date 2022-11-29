@@ -2,7 +2,7 @@
 
 bool student_DeleteData(MYSQL mysql)
 {
-	char query[100];
+	char query[500];
 	char Sno[20];
 	strcpy(query, "delete from Student where Sno='");
 	cout << "请输入学生学号删除学生信息" << endl;

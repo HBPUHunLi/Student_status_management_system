@@ -2,7 +2,7 @@
 
 bool major_DropTable(MYSQL mysql)
 {
-	char Query[200];
+	char Query[500];
 	strcpy(Query, "drop table Major;");
 	if (mysql_query(&mysql, Query))
 	{
