@@ -16,9 +16,6 @@
     <Filter Include="源文件\student">
       <UniqueIdentifier>{29daad57-2b1f-4b05-b80f-98003e37c9ae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\MySql">
-      <UniqueIdentifier>{d47087b6-b5cf-4af3-a790-c41da5c673d1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\算法">
       <UniqueIdentifier>{14a270a0-d5fb-4188-b55c-1eafa7bea403}</UniqueIdentifier>
     </Filter>
@@ -34,6 +31,9 @@
     <Filter Include="源文件\menu">
       <UniqueIdentifier>{3cdff6ce-12a7-42ce-8302-1c14e5e7064b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\System">
+      <UniqueIdentifier>{d47087b6-b5cf-4af3-a790-c41da5c673d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -43,10 +43,10 @@
       <Filter>源文件\student</Filter>
     </ClCompile>
     <ClCompile Include="mysql\ConnectDatabase.cpp">
-      <Filter>源文件\MySql</Filter>
+      <Filter>源文件\System</Filter>
     </ClCompile>
     <ClCompile Include="mysql\FreeConnect.cpp">
-      <Filter>源文件\MySql</Filter>
+      <Filter>源文件\System</Filter>
     </ClCompile>
     <ClCompile Include="student\student_QueryDatabase.cpp">
       <Filter>源文件\student</Filter>
@@ -100,14 +100,35 @@
       <Filter>资源文件</Filter>
     </ClCompile>
     <ClCompile Include="mysql\CreateSystem.cpp">
-      <Filter>源文件\MySql</Filter>
+      <Filter>源文件\System</Filter>
     </ClCompile>
     <ClCompile Include="mysql\DropSystem.cpp">
-      <Filter>源文件\MySql</Filter>
+      <Filter>源文件\System</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\studentM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Major.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Dept.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Report.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\StudentSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Menu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alr.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

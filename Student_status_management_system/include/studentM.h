@@ -5,6 +5,14 @@
 
 #define _CRT_SECURE_NO_DEPRECATE
 
+#include"StudentSystem.h"
+#include"Menu.h"
+#include"Student.h"
+#include"Report.h"
+#include"Dept.h"
+#include"Major.h"
+#include"Alr.h"
+
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,6 +28,7 @@
 //char query[150]; //查询语句
 
 using namespace std;
+/*
 //--------------------------------Database
 MYSQL ConnectDatabase();						//连接数据库
 void FreeConnect(MYSQL mysql);					//释放资源
@@ -64,4 +73,5 @@ bool report_DropTable(MYSQL mysql);			//删除Report表
 bool report_InsertData(MYSQL mysql);			//向Report表添加值
 //--------------------------------age
 char* Sage(int age);							//返回大于age岁的出生日期
+*/
 #endif

@@ -167,7 +167,14 @@
     <ClCompile Include="测试数据\student测试数据.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Alr.h" />
+    <ClInclude Include="include\Dept.h" />
     <ClInclude Include="include\studentM.h" />
+    <ClInclude Include="include\Major.h" />
+    <ClInclude Include="include\Menu.h" />
+    <ClInclude Include="include\StudentSystem.h" />
+    <ClInclude Include="include\Report.h" />
+    <ClInclude Include="include\Student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
