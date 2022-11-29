@@ -142,9 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CreateSystem.cpp" />
+    <ClCompile Include="mysql\CreateSystem.cpp" />
     <ClCompile Include="dept\dept_CreateTable.cpp" />
     <ClCompile Include="dept\dept_DropTable.cpp" />
+    <ClCompile Include="mysql\DropSystem.cpp" />
     <ClCompile Include="测试数据\dept测试数据.cpp" />
     <ClCompile Include="major\major_CreateTable.cpp" />
     <ClCompile Include="测试数据\major测试数据.cpp" />

@@ -99,7 +99,10 @@
     <ClCompile Include="测试数据\report测试数据.cpp">
       <Filter>资源文件</Filter>
     </ClCompile>
-    <ClCompile Include="CreateSystem.cpp">
+    <ClCompile Include="mysql\CreateSystem.cpp">
+      <Filter>源文件\MySql</Filter>
+    </ClCompile>
+    <ClCompile Include="mysql\DropSystem.cpp">
       <Filter>源文件\MySql</Filter>
     </ClCompile>
   </ItemGroup>

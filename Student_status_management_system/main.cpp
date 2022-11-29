@@ -13,7 +13,8 @@ int main() {
 	{
 		cout << endl;
 		char x;
-		cout << "创建学籍管理系统请输入0" << endl;
+		cout << "创建学籍管理系统请输入C" << endl;
+		cout << "创建学籍管理系统请输入D" << endl;
 		cout << "操作Student表信息请输入1"<<endl;
 		cout << "操作Major表信息请输入2" << endl;
 		cout << "操作Dept表信息请输入3" << endl;
@@ -23,7 +24,8 @@ int main() {
 		cin >> x;
 		switch (x)
 		{
-		case '0':CreatSystem(mysql); break;
+		case 'C':CreatSystem(mysql); break;
+		case 'D':DropSystem(mysql); break;
 		case '1':SwitchStudent(mysql); break;
 		case '2':SwitchMajor(mysql); break;
 		case '3':SwitchDept(mysql); break;
