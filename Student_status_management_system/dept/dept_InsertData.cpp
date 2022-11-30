@@ -1,6 +1,5 @@
-
-
 #include"studentM.h"
+
 bool dept_InsertData(MYSQL mysql)
 {
 	char query[500];
@@ -22,4 +21,3 @@ bool dept_InsertData(MYSQL mysql)
 		return true;
 	}
 }
-//

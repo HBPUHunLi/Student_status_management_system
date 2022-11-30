@@ -142,11 +142,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dept_InsertData.cpp" />
+    <ClCompile Include="dept\dept_InsertData.cpp" />
+    <ClCompile Include="major\major_InsertData.cpp" />
     <ClCompile Include="mysql\CreateSystem.cpp" />
     <ClCompile Include="dept\dept_CreateTable.cpp" />
     <ClCompile Include="dept\dept_DropTable.cpp" />
     <ClCompile Include="mysql\DropSystem.cpp" />
+    <ClCompile Include="report\report_DeleteData.cpp" />
+    <ClCompile Include="report\report_InsertData.cpp" />
     <ClCompile Include="测试数据\dept测试数据.cpp" />
     <ClCompile Include="major\major_CreateTable.cpp" />
     <ClCompile Include="测试数据\major测试数据.cpp" />

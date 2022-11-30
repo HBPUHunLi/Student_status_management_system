@@ -64,7 +64,7 @@ void SwitchMajor(MYSQL mysql)
 		{
 		case '1':major_CreateTable(mysql); break;
 		case '2':major_DropTable(mysql); break;
-		case '3':break;
+		case '3':major_InsertData(mysql); break;
 		case '4':break;
 		case '5':break;
 		case '6':break;
@@ -127,9 +127,18 @@ void SwitchReport(MYSQL mysql)
 		{
 		case '1':report_CreateTable(mysql); break;
 		case '2':report_DropTable(mysql); break;
-		case '3':break;
+		case '3':report_InsertData(mysql); break;
 		case '4':break;
-		case '5':break;
+		case '5': {
+			cout << "根据学号删除请输入0"<<endl;
+			cout << "根据专业号删除请输入1" << endl;
+			char No[20];
+			int x5;
+			cin >> x5;
+			cout << "您输入了" << x5 << ",请输入学号或专业号:";
+			cin >> No;
+			report_DeleteData(mysql,No,x5);
+		}
 		case '6':break;
 		case '7':break;
 		case '8':break;

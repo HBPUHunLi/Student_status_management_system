@@ -23,8 +23,7 @@ bool student_InsertData(MYSQL mysql)
 	strcat(queryin, Ssex);
 	strcat(queryin, "'); ");
 	strcpy(query, queryin);
-	cout << endl << query << endl;
-
+//	cout << endl << query << endl;
 	if (mysql_query(&mysql, query))        //Ö´ÐÐSQLÓï¾ä  
 	{
 		printf("Insert Data failed (%s)\n\n", mysql_error(&mysql));

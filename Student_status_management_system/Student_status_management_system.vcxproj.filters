@@ -105,6 +105,18 @@
     <ClCompile Include="mysql\DropSystem.cpp">
       <Filter>源文件\System</Filter>
     </ClCompile>
+    <ClCompile Include="dept\dept_InsertData.cpp">
+      <Filter>源文件\Dept</Filter>
+    </ClCompile>
+    <ClCompile Include="major\major_InsertData.cpp">
+      <Filter>源文件\Major</Filter>
+    </ClCompile>
+    <ClCompile Include="report\report_InsertData.cpp">
+      <Filter>源文件\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="report\report_DeleteData.cpp">
+      <Filter>源文件\Report</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\studentM.h">
