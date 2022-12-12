@@ -117,14 +117,32 @@
     <ClCompile Include="report\report_DeleteData.cpp">
       <Filter>源文件\Report</Filter>
     </ClCompile>
-    <ClCompile Include="major_ModifyData.cpp">
+    <ClCompile Include="major\major_ModifyData.cpp">
       <Filter>源文件\Major</Filter>
     </ClCompile>
-    <ClCompile Include="major_QueryDatabase.cpp">
+    <ClCompile Include="major\major_QueryDatabase.cpp">
       <Filter>源文件\Major</Filter>
     </ClCompile>
-    <ClCompile Include="major_DeleteData.cpp">
+    <ClCompile Include="major\major_DeleteData.cpp">
       <Filter>源文件\Major</Filter>
+    </ClCompile>
+    <ClCompile Include="dept\dept_DeleteData.cpp">
+      <Filter>源文件\Dept</Filter>
+    </ClCompile>
+    <ClCompile Include="dept\dept_QueryDeptAll.cpp">
+      <Filter>源文件\Dept</Filter>
+    </ClCompile>
+    <ClCompile Include="dept\dept_QueryDeptIFDname.cpp">
+      <Filter>源文件\Dept</Filter>
+    </ClCompile>
+    <ClCompile Include="dept\dept_ModifyData.cpp">
+      <Filter>源文件\Dept</Filter>
+    </ClCompile>
+    <ClCompile Include="report\report_QueryDatabase.cpp">
+      <Filter>源文件\Report</Filter>
+    </ClCompile>
+    <ClCompile Include="report\report_ModifyData.cpp">
+      <Filter>源文件\Report</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -13,7 +13,7 @@ int main() {
 		cout << endl;
 		char x;
 		cout << "创建学籍管理系统请输入C" << endl;
-		cout << "创建学籍管理系统请输入D" << endl;
+		cout << "删除学籍管理系统请输入D" << endl;
 		cout << "操作Student表信息请输入1"<<endl;
 		cout << "操作Major表信息请输入2" << endl;
 		cout << "操作Dept表信息请输入3" << endl;

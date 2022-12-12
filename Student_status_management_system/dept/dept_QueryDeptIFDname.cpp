@@ -32,8 +32,6 @@ bool dept_QueryDeptIFDname(MYSQL mysql)
 		return false;
 	}
 
-	//打印数据行数
-	printf("number of dataline returned: %d\n\n", (int)mysql_affected_rows(&mysql));
 
 	//获取字段的信息
 	char* str_field[32];			//定义一个字符串数组存储字段信息
@@ -42,15 +40,10 @@ bool dept_QueryDeptIFDname(MYSQL mysql)
 		str_field[i] = mysql_fetch_field(res)->name;	//返回一个所有字段结构的数组。
 	}
 
-	for (int i = 0; i < 1; i++)		//打印字段
-		printf("%10s	", str_field[i]);
-
-	printf("\n");
-
 	//打印获取的数据
 	if (column = mysql_fetch_row(res))   //在已知字段数量情况下，获取并打印下一行
 	{
-		printf("存在");
+		printf("存在\n");
 	}
 	else
 		printf("不存在");

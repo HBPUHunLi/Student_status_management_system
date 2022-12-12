@@ -144,16 +144,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dept\dept_InsertData.cpp" />
+    <ClCompile Include="dept\dept_DeleteData.cpp" />
+    <ClCompile Include="dept\dept_ModifyData.cpp" />
+    <ClCompile Include="dept\dept_QueryDeptAll.cpp" />
+    <ClCompile Include="dept\dept_QueryDeptIFDname.cpp" />
     <ClCompile Include="major\major_InsertData.cpp" />
-    <ClCompile Include="major_DeleteData.cpp" />
-    <ClCompile Include="major_ModifyData.cpp" />
-    <ClCompile Include="major_QueryDatabase.cpp" />
+    <ClCompile Include="major\major_DeleteData.cpp" />
+    <ClCompile Include="major\major_ModifyData.cpp" />
+    <ClCompile Include="major\major_QueryDatabase.cpp" />
     <ClCompile Include="mysql\CreateSystem.cpp" />
     <ClCompile Include="dept\dept_CreateTable.cpp" />
     <ClCompile Include="dept\dept_DropTable.cpp" />
     <ClCompile Include="mysql\DropSystem.cpp" />
     <ClCompile Include="report\report_DeleteData.cpp" />
     <ClCompile Include="report\report_InsertData.cpp" />
+    <ClCompile Include="report\report_ModifyData.cpp" />
+    <ClCompile Include="report\report_QueryDatabase.cpp" />
     <ClCompile Include="测试数据\dept测试数据.cpp" />
     <ClCompile Include="major\major_CreateTable.cpp" />
     <ClCompile Include="测试数据\major测试数据.cpp" />

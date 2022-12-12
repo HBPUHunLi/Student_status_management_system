@@ -34,6 +34,7 @@ void SwitchStudent(MYSQL mysql)
 			int age;
 			cin >> age;
 			QueryStudentOFAge(mysql, age);
+            break;
 		}
 		default:return;
 		}
@@ -86,7 +87,7 @@ void SwitchDept(MYSQL mysql)
 	cout << "修改学院信息请输入4" << endl;
 	cout << "删除学院信息请输入5" << endl;
 	cout << "查询所有学院信息请输入6" << endl;
-	cout << "查询某学院是否存在Dept表7" << endl;
+	cout << "查询某学院是否存在请输入7" << endl;
 	cout << "请按其他键退出Dept表" << endl;
 
 	while (1)
@@ -99,7 +100,7 @@ void SwitchDept(MYSQL mysql)
 		case '1':dept_CreateTable(mysql); break;
 		case '2':dept_DropTable(mysql); break;
 		case '3':dept_InsertData(mysql); break;
-		case '4':break;
+        case '4':dept_ModifyData(mysql); break;
 		case '5':dept_DeleteData(mysql); break;
 		case '6':dept_QueryDeptAll(mysql); break;
 		case '7':dept_QueryDeptIFDname(mysql); break;
@@ -120,7 +121,7 @@ void SwitchReport(MYSQL mysql)
 	cout << "删除学生专业信息请输入5" << endl;
 	cout << "查询所有学生专业信息请输入6" << endl;
 	cout << "通过学号查询所在专业信息请输入7" << endl;
-	cout << "通过专业号查询该专业所有学生信息请输入8" << endl;
+	cout << "通过专业查询该专业所有学生信息请输入8" << endl;
 	cout << "请按其他键退出Dept表" << endl;
 	while (1)
 	{
@@ -131,7 +132,7 @@ void SwitchReport(MYSQL mysql)
 		case '1':report_CreateTable(mysql); break;
 		case '2':report_DropTable(mysql); break;
 		case '3':report_InsertData(mysql); break;
-		case '4':break;
+		case '4':report_ModifyData(mysql); break;
 		case '5': {
 			cout << "根据学号删除请输入0"<<endl;
 			cout << "根据专业号删除请输入1" << endl;
@@ -142,9 +143,9 @@ void SwitchReport(MYSQL mysql)
 			cin >> No;
 			report_DeleteData(mysql,No,x5);
 		}
-		case '6':break;
-		case '7':break;
-		case '8':break;
+		case '6':QueryReportALL(mysql); break;
+		case '7':QueryReportOFSno(mysql); break;
+        case '8':QueryReportOFMname(mysql); break;
 		default:return;
 		}
 	}

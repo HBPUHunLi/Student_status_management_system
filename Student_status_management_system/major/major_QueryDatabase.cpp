@@ -8,7 +8,7 @@ bool QueryMajorAll(MYSQL mysql)
     MYSQL_RES* res; //这个结构代表返回行的一个查询结果集
     MYSQL_ROW column; //一个行数据的类型安全(type-safe)的表示，表示数据行的列
 
-    strcpy(query, "select Mno as 专业号,Mname as 专业名称,Mdept as 所属学院 from Major;"); //输入查询语句
+    strcpy(query, "select Mno as 专业号,Mname as 专业名称,Mdept as 所属学院 from Major order by Mdept;"); //输入查询语句
     mysql_query(&mysql, "set names gbk"); //设置编码格式（SET NAMES GBK也行），否则cmd下中文乱码
 
     //返回0 查询成功，返回1查询失败

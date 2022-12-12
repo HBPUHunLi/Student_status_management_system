@@ -17,7 +17,7 @@ MYSQL ConnectDatabase()
 		//中间分别是主机，用户名，密码，数据库名，端口号（可以写默认0或者3306等），可以先写成参数再传进去  
 	{
 		printf("Error connecting to database:%s\n", mysql_error(&mysql));
-		return mysql;
+        exit(1);
 	}
 	else
 	{
