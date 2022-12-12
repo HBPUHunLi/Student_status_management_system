@@ -118,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\86186\source\repos\HBPUHunLi\Student_status_management_system\Student_status_management_system\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,6 +145,9 @@
   <ItemGroup>
     <ClCompile Include="dept\dept_InsertData.cpp" />
     <ClCompile Include="major\major_InsertData.cpp" />
+    <ClCompile Include="major_DeleteData.cpp" />
+    <ClCompile Include="major_ModifyData.cpp" />
+    <ClCompile Include="major_QueryDatabase.cpp" />
     <ClCompile Include="mysql\CreateSystem.cpp" />
     <ClCompile Include="dept\dept_CreateTable.cpp" />
     <ClCompile Include="dept\dept_DropTable.cpp" />
@@ -179,6 +183,9 @@
     <ClInclude Include="include\StudentSystem.h" />
     <ClInclude Include="include\Report.h" />
     <ClInclude Include="include\Student.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

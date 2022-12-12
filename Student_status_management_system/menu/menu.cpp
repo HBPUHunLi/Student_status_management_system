@@ -62,15 +62,15 @@ void SwitchMajor(MYSQL mysql)
 		cin >> x;
 		switch (x)
 		{
-		case '1':major_CreateTable(mysql); break;
-		case '2':major_DropTable(mysql); break;
-		case '3':major_InsertData(mysql); break;
-		case '4':break;
-		case '5':break;
-		case '6':break;
-		case '7':break;
-		case '8':break;
-		default:return;
+        case '1':major_CreateTable(mysql); break;
+        case '2':major_DropTable(mysql); break;
+        case '3':major_InsertData(mysql); break;
+        case '4':major_ModifyData(mysql); break;
+        case '5':major_DeleteData(mysql); break;
+        case '6':QueryMajorAll(mysql); break;
+        case '7':QueryMajorOFMno(mysql); break;
+        case '8':QueryMajorOFMname(mysql); break;
+        default:return;
 		}
 	}
 }

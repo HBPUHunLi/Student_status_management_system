@@ -117,6 +117,15 @@
     <ClCompile Include="report\report_DeleteData.cpp">
       <Filter>源文件\Report</Filter>
     </ClCompile>
+    <ClCompile Include="major_ModifyData.cpp">
+      <Filter>源文件\Major</Filter>
+    </ClCompile>
+    <ClCompile Include="major_QueryDatabase.cpp">
+      <Filter>源文件\Major</Filter>
+    </ClCompile>
+    <ClCompile Include="major_DeleteData.cpp">
+      <Filter>源文件\Major</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\studentM.h">
@@ -143,5 +152,8 @@
     <ClInclude Include="include\Alr.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
   </ItemGroup>
 </Project>
