@@ -86,7 +86,9 @@ void SwitchDept(MYSQL mysql)
 	cout << "修改学院信息请输入4" << endl;
 	cout << "删除学院信息请输入5" << endl;
 	cout << "查询所有学院信息请输入6" << endl;
+	cout << "查询某学院是否存在Dept表7" << endl;
 	cout << "请按其他键退出Dept表" << endl;
+
 	while (1)
 	{
 		cout << endl;
@@ -98,8 +100,9 @@ void SwitchDept(MYSQL mysql)
 		case '2':dept_DropTable(mysql); break;
 		case '3':dept_InsertData(mysql); break;
 		case '4':break;
-		case '5':break;
-		case '6':break;
+		case '5':dept_DeleteData(mysql); break;
+		case '6':dept_QueryDeptAll(mysql); break;
+		case '7':dept_QueryDeptIFDname(mysql); break;
 		default:return;
 		}
 	}

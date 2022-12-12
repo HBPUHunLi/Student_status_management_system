@@ -60,6 +60,7 @@ bool student_DeleteData(MYSQL mysql);			//通过学号删除student表的值
 bool dept_CreateTable(MYSQL mysql);			//创建Dept表
 bool dept_DropTable(MYSQL mysql);			//删除Dept表
 bool dept_InsertData(MYSQL mysql);			//向Dept表添加值
+bool dept_DeleteData(MYSQL mysql);          //通过学院名删除学院
 
 //--------------------------------Major
 bool major_CreateTable(MYSQL mysql);		//创建Major表
